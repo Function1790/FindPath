@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="MapEditor.Block"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MapEditor"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Left"
+             VerticalAlignment="Top"
+             MouseDown="UserControl_MouseDown"
+             d:DesignHeight="25" d:DesignWidth="25">
+    <Grid>
+        <Rectangle x:Name="displayState" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="25" Fill="#FFEF6464" Stroke="Black"/>
+    </Grid>
+</UserControl>
