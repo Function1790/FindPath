@@ -3,6 +3,8 @@ from setting import *
 from time import sleep
 from os import system
 
+#TODO : 분화 알고리즘 개발
+
 def getFormatedMap(explorer:Explorer):
     _map=MAP
     _pos=explorer.pos
