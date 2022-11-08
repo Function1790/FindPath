@@ -15,3 +15,8 @@ MAP = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]
 ]
+
+MAP_WIDTH = len(MAP)
+MAP_HEIGHT = len(MAP[0])
+START_POINT = [0, 0]
+ARRIVAL_POINT = [MAP_WIDTH - 1, MAP_HEIGHT - 1]
