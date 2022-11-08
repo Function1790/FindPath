@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Py8\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj": {}
+    "D:\\Py8\\FindWays\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj": {}
   },
   "projects": {
-    "D:\\Py8\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj": {
+    "D:\\Py8\\FindWays\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Py8\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj",
+        "projectUniqueName": "D:\\Py8\\FindWays\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj",
         "projectName": "MapEditor",
-        "projectPath": "D:\\Py8\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj",
+        "projectPath": "D:\\Py8\\FindWays\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj",
         "packagesPath": "C:\\Users\\이재헌\\.nuget\\packages\\",
-        "outputPath": "D:\\Py8\\FindPath\\MapEditor\\MapEditor\\obj\\",
+        "outputPath": "D:\\Py8\\FindWays\\FindPath\\MapEditor\\MapEditor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\이재헌\\AppData\\Roaming\\NuGet\\NuGet.Config",

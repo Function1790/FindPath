@@ -66,7 +66,7 @@ class Explorer:
 
     def Separate(self, _possible_pos):
         for i in _possible_pos:
-            SeparateUnit()
+            SeparateUnit(self.pos, i, self.trace)
 
     def Move(self):
         predtic_pos = [

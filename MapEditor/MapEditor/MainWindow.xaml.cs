@@ -20,9 +20,9 @@ namespace MapEditor
     /// </summary>
     public partial class MainWindow : Window
     {
-        const int Size_X = 15;
-        const int Size_Y = 15;
-        Block[,] blocks = new Block[Size_X, Size_Y];
+        const int Size_X = 23;
+        const int Size_Y = 23;
+        Block[,] blocks = new Block[Size_Y, Size_X];
 
         public MainWindow()
         {

@@ -4,12 +4,12 @@
 exe
 C#
 .cs
-D:\Py8\FindPath\MapEditor\MapEditor\obj\Debug\net6.0-windows\
+D:\Py8\FindWays\FindPath\MapEditor\MapEditor\obj\Debug\net6.0-windows\
 MapEditor
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Py8\FindPath\MapEditor\MapEditor\App.xaml
+D:\Py8\FindWays\FindPath\MapEditor\MapEditor\App.xaml
 2-283507037
 
 6161139807

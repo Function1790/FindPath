@@ -8,8 +8,8 @@
              HorizontalAlignment="Left"
              VerticalAlignment="Top"
              MouseDown="UserControl_MouseDown"
-             d:DesignHeight="25" d:DesignWidth="25">
+             d:DesignHeight="10" d:DesignWidth="10">
     <Grid>
-        <Rectangle x:Name="displayState" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="25" Fill="#FFEF6464" Stroke="Black"/>
+        <Rectangle x:Name="displayState" Fill="#FFEF6464" Stroke="Black"/>
     </Grid>
 </UserControl>

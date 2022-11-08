@@ -4,10 +4,7 @@ from time import sleep
 from os import system
 
 # TODO
-# 분화 알고리즘 개발
-# Vector 클래스
-# 방향 레코더
-# 목표 좌표
+# 도착 안됨 버그 수정
 # 도착시 해당 유닛의 이동경로
 
 
@@ -15,7 +12,7 @@ def getFormatedMap(explorer: Explorer):
     _map = MAP
     _pos = explorer.pos
     _map[_pos[1]][_pos[0]] = 2
-    result = ""
+    result = "|| "
     for y in MAP:
         for x in y:
             if x == 0:
@@ -24,7 +21,7 @@ def getFormatedMap(explorer: Explorer):
                 result += "□"
             else:
                 result += "■"
-        result += "\n"
+        result += " ||\n|| "
     return result
 
 
@@ -53,7 +50,7 @@ while not isArrived:
     system("cls")
     print(display_map)
     print(f"Runners Count : {len(Runners)}")
-    sleep(0.01)
+    sleep(0.05)
 
-print("\n\nArrive!!")
+print("\nArrive!!")
 print(Winner.trace)

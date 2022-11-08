@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xUL3Wlo2NALp1fhksh1JfW35/SIAFzIobyV3/vHqhqPmC+wdlvKL0t36re3mmgTXpIJ76oIYATEeBshC1MhNYw==",
+  "dgSpecHash": "SKswE8VPKni6pgbwNeN9DyBnEckmxBdy3yrvGr+Zh7xYww0lb3+07ZAUMTmhaxzKkJNBu0O+Cuu0lU62mVWDvg==",
   "success": true,
-  "projectFilePath": "D:\\Py8\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj",
+  "projectFilePath": "D:\\Py8\\FindWays\\FindPath\\MapEditor\\MapEditor\\MapEditor.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
