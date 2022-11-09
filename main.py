@@ -4,7 +4,6 @@ from time import sleep
 from os import system
 
 # TODO
-# 도착 안됨 버그 수정
 # 도착시 해당 유닛의 이동경로
 
 
