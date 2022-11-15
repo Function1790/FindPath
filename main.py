@@ -12,13 +12,13 @@ def getFormatedMap(explorer: Explorer):
     _pos = explorer.pos
     _map[_pos[1]][_pos[0]] = 2
     result = "|| "
-    for y in MAP:
+    for y in _map:
         for x in y:
-            if x == 0:
+            if x == 0:   # Path
                 result += "  "
-            elif x == 1:
+            elif x == 1: # Wall
                 result += "□"
-            else:
+            else:        # Explorer
                 result += "■"
         result += " ||\n|| "
     return result
@@ -29,13 +29,14 @@ Winner = None
 Died_Runners = []
 Runners.append(Explorer())
 
+sleep(6)
 display_map = ""
 while not isArrived:
     deleted_index = []
     for i in range(len(Runners)):
         display_map = getFormatedMap(Runners[i])
-        if not Runners[i].Move():
-            if Runners[i].pos == ARRIVAL_POINT:
+        if not Runners[i].Move(): # Cant Move
+            if Runners[i].pos == ARRIVAL_POINT: # isArrive?
                 Winner = Runners[i]
                 isArrived = True
                 break

@@ -1,7 +1,7 @@
 import typing as t
 from setting import *
 
-Runners = []
+Runners = [] # Contain Explorers
 CHAR_DIRECTION = "→↓←↑"
 
 
@@ -45,22 +45,22 @@ class Explorer:
         self.trace += DirectionToChar(direction)
 
     def getWayToGo(self) -> t.List[Vector]:
-        predtic_pos = [
-            addVector(self.pos, 1, 0, 0),
-            addVector(self.pos, -1, 0, 2),
-            addVector(self.pos, 0, 1, 1),
-            addVector(self.pos, 0, -1, 3)
+        predict_pos = [
+            addVector(self.pos, 1, 0, 0),   # Right
+            addVector(self.pos, -1, 0, 2),  # Left
+            addVector(self.pos, 0, 1, 1),   # Down
+            addVector(self.pos, 0, -1, 3)   # Up
         ]
 
         result = []
-        for i in predtic_pos:
-            if i[0] < 0 or i[1] < 0:
+        for i in predict_pos:
+            if i[0] < 0 or i[1] < 0: # Index Error : Underflow
                 continue
-            if i[0] >= len(MAP[0]) or i[1] >= len(MAP):
+            if i[0] >= len(MAP[0]) or i[1] >= len(MAP): # Index Error : Overflow
                 continue
-            if i == self.last_pos or MAP[i[1]][i[0]] != 0:
+            if i == self.last_pos or MAP[i[1]][i[0]] != 0: # predict_pos == go back or WALL
                 continue
-            result.append(i)
+            result.append(i) # way that can go
 
         return result
 
@@ -69,19 +69,12 @@ class Explorer:
             SeparateUnit(self.pos, i, self.trace)
 
     def Move(self):
-        predtic_pos = [
-            addVector(self.pos, 1, 0, 0),
-            addVector(self.pos, -1, 0, 2),
-            addVector(self.pos, 0, 1, 1),
-            addVector(self.pos, 0, -1, 3)
-        ]
-
         possible_pos = self.getWayToGo()
         if possible_pos==[]:
             return False
 
-        if len(possible_pos) != 0:
-            self.Separate(possible_pos[1:len(possible_pos)])
+        if len(possible_pos) != 0: # the way is not the only one
+            self.Separate(possible_pos[1:])
 
         self.recordData(possible_pos[0].getDirection())
         self.pos = possible_pos[0]
